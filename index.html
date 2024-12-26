@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>smart farm</title>
+    <link rel="stylesheet" href="css/marge.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <div class="nav">
+        <header>
+            <div class="logo">
+                <div class="log">
+                    <span class="a"></span>
+                    <span class="b"></span>
+                    <span class="c"></span>
+                </div>
+                <span class="name">smart<span>Farm</span></span>
+            </div>
+            <div class="access">
+                <ul>
+                    <li><a href="pages/home/index.html">home</a></li>
+                    <li><a href="pages/contact/smart/index.html">content</a></li>
+                    <li><a href="pages/about/about.html">info</a></li>
+                    <li><a href="pages/about/about.html">about us</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <a href="./pages/dashboard.html">
+                        <li><button onclick="logtosign()">Goto dashboard</button></li>
+
+                    </a>
+                    <li class="lgn"><span><button onclick="signtolog()">log in </button><i class="fa-solid fa-arrow-right"></i></span></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="grandpa">
+
+        <div class="container" id="item3">
+            <div class="transform">
+
+                <form class="sign" id="item2" action="register now">
+                    <h1>Account Register</h1>
+                    <label for="FirstName"></label>
+                    <input type="text" placeholder="First Name" required>
+                    <label for="LastName"></label>
+                    <input type="text" placeholder="LastName" required>
+                    <label for="password"></label>
+                    <input type="password" placeholder="password" required>
+                    <label for="confirm"></label>
+                    <input type="password" placeholder="confirm password" required>
+                    <label for="Email"></label>
+                    <input type="email" placeholder="Email@gmail.com" required>
+                    <label for="Number"></label>
+                    <input type="text" placeholder="Phone Number" required>
+                    <div class="buttom">
+                        <input type="submit" value="sign">
+                        <button onclick="signtolog()" class="log-buttom" id="log"> log</button>
+                    </div>
+                </form>
+                <form class="log" id="item1" action="LOGIN" method="post">
+                    <h1>Account Login</h1>
+                    <label for="User Name"></label>
+                    <input type="email" placeholder="email" required>
+                    <label for="password"></label>
+                    <input type="password" placeholder="password" required>
+                    <input style="margin-top: 60px;" type="submit" value="log">
+                    <div class="links">
+                        <a href="#">نسيت كلمة المرور؟</a>
+                        <button onclick="logtosign()"> do you not have Account? make one</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="JS/marge.js"></script>
+</body>
+
+</html>

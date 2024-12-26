@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("https://db.onlinewebfonts.com/t/9eb5b7e8afb18f98b00594b9e758b378.ttf")format("truetype");
+}
+
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 600; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+header .log {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+header .log .a {
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: #de603e;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+header .log .b {
+  width: 70%;
+  height: calc(100% / 3);
+  background-color: #e1a800;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+header .log .c {
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: #449045;
+  border-radius: 3px;
+}
+header .log:hover .b {
+  width: 100%;
+}
+
+.logo .name {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.logo .name span {
+  opacity: 0.5;
+}
+.access ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+.access ul li {
+  list-style: none;
+  margin-left: 40px;
+  font-weight: 600;
+}
+header .login {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+header .login ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+header .login ul li {
+  list-style: none;
+  margin-left: 40px;
+  font-weight: 600;
+}
+header .login ul .lgn {
+  border: #de603e solid 3px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+header .login ul .lgn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  /* font-size: 40px; */
+}
+header .login ul .lgn span i {
+  font-weight: normal;
+}
+.content-one h1 span {
+  color: #de603e;
+}
+.paragraph-one {
+  font-weight: 600;
+}

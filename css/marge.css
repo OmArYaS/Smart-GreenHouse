@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-transform: capitalize;
+}
+body {
+  background-image: url(../image/pexels-sohail-nachiti-807598.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(222, 184, 135, 0.773);
+  
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+header .log {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+header .log .a {
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: #de603e;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+header .log .b {
+  width: 70%;
+  height: calc(100% / 3);
+  background-color: #e1a800;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+header .log .c {
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: #449045;
+  border-radius: 3px;
+}
+header .log:hover .b {
+  width: 100%;
+}
+
+.logo .name {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.logo .name span {
+  opacity: 0.5;
+}
+.access ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+.access ul li {
+  list-style: none;
+  margin-left: 40px;
+  font-weight: 600;
+}
+header .login {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+header .login ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+header .login ul button{
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+header .login ul li {
+  list-style: none;
+  margin-left: 40px;
+  font-weight: 600;
+}
+header .login ul .lgn {
+  border: #de603e solid 3px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+header .login ul .lgn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  /* font-size: 40px; */
+}
+header .login ul .lgn span i {
+  font-weight: normal;
+}
+header .access a{
+  text-decoration: none;
+  color: black;
+
+}
+.grandpa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.393);
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  /* justify-content: flex-end; */
+}
+.sign {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  display: none;
+
+}
+.log {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.log input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 100px;
+  background-color: burlywood;
+  color: black;
+  font-size: 16px;
+}
+.log .links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.log .links a{
+  text-decoration: none;
+  font-size: 20px;
+  color: burlywood;
+
+}
+.log .links button{
+  background-color: transparent;
+  color: burlywood;
+  border: none;
+  font-size: 20px;
+}
+.sign input,
+.buttom .log-buttom {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 100%;
+  background-color: burlywood;
+  color: black;
+  font-size: 16px;
+}
+h1{
+    margin-bottom: 80px;
+    color: wheat;
+    text-align: center;
+}
+.sign .buttom{
+    
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-items: center; */
+
+}
+.buttom .log-buttom ,
+.buttom input{
+    width: 100%;
+
+}
+.transform{
+  width: 50%;
+  height: 500px;
+  display: flex;
+}
+

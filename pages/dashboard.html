@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>test css</title>
+  <meta charset="UTF-8" />
+  <meta name="css" content="this content" />
+  <link rel="stylesheet" href="../css/css1.css" />
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/uicons-thin-straight.css" />
+  <link rel="preconnect" href="../https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body id="targetElement2">
+  <div class="container">
+    <div class="sidebar">
+      <img src="../image/sunset (2).png" alt="" width="30" />
+      <div class="icon">
+        <i class="fa-brands fa-pagelines"></i>
+        <i class="fa-solid fa-gear " id="changeColorButton"></i>
+        <i class="fa-regular fa-moon" id="night_mode"></i>
+      </div>
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    </div>
+    <div class="content" id="targetElement1">
+      <div class="description">
+        <h1>Your agricultural assistant
+          <p>Helping you to make the right decision and seed your plants</p>
+        </h1>
+        <div class="nav" id="targetElement4">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-bell"></i>
+          <img src="../image/farmer (1).png" alt="" width="25" />
+        </div>
+      </div>
+      <div class="board">
+        <div class="board1">
+          <i class="fi fi-ts-temperature-high"></i>
+          <span class="temper">
+            <span id="temperature"></span><span class="celsius">°C<br>Air Temp</span>
+          </span>
+          <span class="state">Good</span>
+        </div>
+        <div class="board2">
+          <i class="fa-solid fa-droplet"></i>
+          <span class="temper">72 <span class="celsius">%<br>Soil Moisture</span> </span>
+          <span class="state">High</span>
+        </div>
+        <div class="board3">
+          <i class="fa-solid fa-cloud-showers-heavy"></i>
+          <span class="temper">2 <span class="celsius">mm<br>Precipition</span> </span>
+          <span class="state">Low</span>
+        </div>
+      </div>
+      <h2 class="say">Manage your fields <br>
+        <span class="celsius">Select an area for sowing.</span>
+      </h2>
+      <div class="fields">
+        <img src="../image/original-932ec7c34ed2c3302739bb4ca6859ff1.png" alt="">
+      </div>
+      <div class="board4">
+        <i class="fa-regular fa-lightbulb"></i>
+        <p>lamp</p>
+        <span  class="button-switch" id="button-switch1" onclick="onoroffforlamp()">
+          <span class="button-ball"></span>
+        </span>
+
+      </div>
+      <div class="board5">
+      <i class="fa-solid fa-fan"></i>
+      <p>fan</p>
+      <span class="button-switch" id="button-switch2" onclick="onoroffforfan()">
+        <span class="button-ball"></span>
+      </span>
+
+      </div>
+      <!-- <div class="arrow">
+        <i class="fa-solid fa-arrow-left arrowleft"></i>
+        <i class="fa-solid fa-arrow-right arrowright"></i>
+      </div> -->
+    </div>
+    <div class="sidebar2" id="targetElement3">
+      <img src="../image/wheat.png" alt="" width="100" height="90" />
+      <h4>wheat</h4>
+      <div class="plant">
+        <span><i class="fa-regular fa-circle-left"></i></span>
+        <span><i class="fa-regular fa-circle-right"></i></span>
+      </div>
+    </div>
+  </div>
+  <script src="../JS/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+body {
+  background-color: #aab7cc;
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.container {
+  margin: 10px auto;
+  display: flex;
+  width: 90vw;
+  box-shadow: 10px 10px 30px 10px black;
+  border-radius: 20px;
+  height: 700px;
+}
+.sidebar {
+  background-color: #272727;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  display: flex;
+  width: 5%;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: transform 0.3s ease-in-out; */
+}
+#changeColorButton:hover {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease-in-out;
+  text-shadow: 0px 0px 3px #83d532;
+}
+#night_mode:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+  text-shadow: 0px 0px 3px #83d532;
+}
+i {
+  color: #656367;
+  font-size: 30px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 10px;
+  align-content: space-between;
+  height: 300px;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 70px 160px 50px 190px 190px ;
+  grid-template-areas:
+    "desc desc desc desc desc"
+    "board board board board board"
+    "say say say . arrow "
+    "fields fields fields . lamp"
+    "fields fields fields . fan";
+  background-color: white;
+  /* width: 80px; */
+  height: 660px;
+  flex-grow: 22;
+  padding: 20px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+.description {
+  grid-area: desc;
+  display: flex;
+  justify-content: space-between;
+}
+.description h1 p {
+  color: #565656;
+  margin: 0;
+  font-size: 15px;
+}
+.description h1 {
+  text-shadow: 1px 1px 3px;
+  margin: 0;
+}
+
+.sidebar2 {
+  width: 15%;
+  flex-grow: 0;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.nav {
+  display: flex;
+  width: 150px;
+  height: 25px;
+  justify-content: space-between;
+  border: 5px solid #dfe0e6;
+  padding: 5px;
+  border-radius: 50px;
+  align-items: center;
+  grid-area: nav;
+}
+.board1 {
+  background-color: #d1eff5;
+  box-shadow: 5px 5px 5px 2px #99afb3;
+}
+.board2 {
+  background-color: #f0f5d1;
+  box-shadow: 5px 5px 5px 2px #afb399;
+}
+.board3 {
+  background-color: #d1eedb;
+  box-shadow: 5px 5px 5px 2px #98ac9f;
+}
+.board4 {
+  grid-area: lamp;
+  background-color: wheat;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  box-shadow: 5px 5px 5px 2px rgb(199, 182, 150);
+}
+.board5 {
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  grid-area: fan;
+  background-color: rgb(188, 221, 250);
+  position: relative;
+  box-shadow: 5px 5px 5px 2px rgb(105, 133, 157);
+}
+.board4 .button-switch,
+.board5 .button-switch {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50px;
+  height: 23px;
+  background-color: #242424;
+  border: #aaaaaa 2px solid;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 20%;
+  left: 60%;
+  box-shadow: 1px 1px 10px 0px black;
+
+}
+.board4 .button-switch .button-ball,
+.board5 .button-switch .button-ball {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 2px;
+  background-color: #98ac9f;
+  box-shadow: 2px 2px 10px 0px black;
+
+}
+.board4 p,
+ .board5 p {
+  font-size: 50px;
+  margin-top: 5px;
+  padding: 0;
+}
+.board {
+  display: flex;
+  justify-content: space-between;
+  grid-area: board;
+}
+.board1,
+.board2,
+.board3 {
+  box-sizing: border-box;
+  width: 25%;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+}
+.temper {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 32px;
+}
+.celsius {
+  font-size: 15px;
+  font-weight: normal;
+}
+.state {
+  border: 1px solid #aab7cc;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 3px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  text-align: center;
+}
+.say {
+  grid-area: say;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.say span {
+  color: #565656;
+}
+.fields {
+  grid-area: fields;
+  display: flex;
+  justify-content: center;
+  /* width:100%;
+ height:100%; */
+}
+.fields img {
+  border-radius: 50px;
+  width: 100%;
+}
+.arrow {
+  grid-area: arrow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

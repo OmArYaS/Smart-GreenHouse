@@ -1,0 +1,243 @@
+:root{
+    --primaryColor: #6ec25c;
+    --secondaryColor: #104604;
+    --lightColor: #ffffff;
+    --bgColor-1: #fcfbfe;
+    --bgColor-2: #22282a;
+    --padding:8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--lightColor);
+    background-color: var(--bgColor-1);
+}
+.contact-container{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,lfr);
+    gap: 1.5rem;
+    background-color: var(--secondaryColor);
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.form-container{
+    padding: 20px;
+}
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--bgColor-1);
+    padding: 10px;
+    font-size: 0.9rem;
+    color: var(--lightColor);
+    border-radius: 0.4rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background-color: var(--lightColor);
+    color: var(--primaryColor);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.contact-form .send-button:hover{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    transition: 0.3s all linear;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+
+}
+.map iframe:hover{
+    filter: invert(100%);
+}
+
+
+
+.social{
+    margin-top: 3.5rem;
+}
+.social a{
+    text-decoration: none;
+}
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/*
+html{
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+span{
+    color: var(--primaryColor);
+}
+
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondaryColor);
+}
+*/
+
+/*****************************************************************
+******************       social meda           ******************
+*****************************************************************/
+
+
+/*
+.contact-us{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-text{
+    position: relative;
+    bottom: 70px;
+}
+
+.social{
+    margin-top: 3.5rem;
+}
+.social a{
+    text-decoration: none;
+}
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+******************       google maps            ******************
+*****************************************************************/
+
+/*
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+h1{
+    color: rgb(13, 209, 92);
+    margin-bottom: 60px;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+    filter: invert(100%);
+    transition: 2s;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
